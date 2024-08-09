@@ -13,33 +13,25 @@ def information_card(data):
             is_student = volues # обьявление переменной {is_student} 
             print(f"{key}: {is_student}")
 
-data_card_01 =  { # данные Максим
+data_card = [
+{ # данные Максим
     'Name': 'Максим',
     'Age': '46',
     'New Age': '46',
     'Is Student': 'Fals'
-}
-data_card_02 =  { # данные Софья
+},
+ { # данные Софья
     'Name': 'Софья',
     'Age': '16',
     'New Age': '16',
     'Is Student': 'True'
-}
-data_card_03 =  { # данные Саша
+},
+ { # данные Саша
     'Name': 'Саша',
     'Age': '26',
     'New Age': '26',
     'Is Student': 'True'
-}
+}]
 
-for i in range(1, 4):
-    if i == 1:
-        information_card(data_card_01)
-    elif i == 2:    
-        information_card(data_card_02)
-    elif i == 3:    
-        information_card(data_card_03)
-    else:
-        print(f'Ошибка: {i}')
-
-
+for i in range(0, len(data_card)):
+        information_card(data_card[i])
